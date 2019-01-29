@@ -36,7 +36,7 @@ print("alku")
 # esim luukkuauki = ..., "linkki" + "_tekstiä", "21" + "21", ...] 
 # muista välilyönti ennen tekstiä! 
 # älä muokkaa mielellään muuta koodia 
-luukkuauki = ['null', 'https://i.ytimg.com/vi/e2K2mMRJVtY/maxresdefault.jpg' + " Niilopukki!", 'https://cdn.ksml.fi/incoming/90sndt-KINNULAA.jpg/ALTERNATES/FREE_1140/KINNULAA.jpg' + " Vanha tuttu Juha Urpilainen luonnollisessa ympäristössään eli viemässä kinnusten rahoja", "https://i.ylilauta.org/ba/86a014ea.jpg" + " Norttimies", "https://www.kansanuutiset.fi/images/2002941-759x500.jpg" + " Kulttuuria Kinnulasta", "https://www.stara.fi/wp-content/uploads/2015/03/poliisiauto08032015.jpg" + " Poliisit Kinnulassa",  "http://i2.wp.com/listverse.com/wp-content/uploads/2009/11/simo_hayha-s585x360-11707.jpg" + " __**Simo Häyhä**__" + " Tämän päivän luukku on siitä erityinen että tänään on Suomen itsenäisyyspäivä. Erityisen päivästä tekee myös se, kun **1. menet ensin äänikanavalle** -> **2. kirjoita chattiin** ***'hyvää itsenäisyyspäivää!'*** saat ennenkuulumattoman itsenäisyyspäivän kokemuksen!", "https://i.4pcdn.org/sp/1463511420482.png" + " Bulju", "https://fi-seiska-cdn-pro.seiska.fi/files/styles/article_page_image_770px_wide/s3/2018-12/pk_keke_ilman_paitaa_lehtikuva.jpg?itok=sKg8afPT" + " Keke Rosberg", "https://www.punanaamio.fi/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/5/25912-koira-naamiaisasu.jpg" + " pehmeä koira naamiais asu", "https://t.ylilauta.org/6d/4617086f.jpg" + " allu", "11" + "11", "https://gyazo.com/13d6187970c26723f6dcd6c8fb3b79f8" + " Etelän matkailija Miika Kinnuen", "https://gyazo.com/3108f6529950d9293cd5a2239f00b1a9" + " Mäk Elmeri69 sekä Mr. Worldwide aka Märkä Siili", "https://gyazo.com/88065a351d1b3aa18c9aed9e1238c548" + " Janin teltta", "https://gyazo.com/43e23176a615ec5dda3f4c22e0d128d4" + " Miika kinnunen", "https://gyazo.com/d5c869d3f7fd888a877514ac5927caae" + " Urbaania menoa ja meininkiä kinnulan teollisuusalueelta", "https://media.riemurasia.net/albumit/mmedia/fq/524/trwd/139511/1115862124.jpg" + " Joulupukki pajalla valmistautumassa aattoon", "https://1drv.ms/u/s!ArvOpRSpS8mq5jfTGYGPkMzttRmm" + " Vihainen mies", "Moti meni" + "", "20" + "20", "21" + "21", "22" + "22", "23" + "23", "24" + "24"]
+luukkuauki = ['null', '' + " ", '' + " ", "" + " ", "" + " ", "" + " ",  "" + " " + " Tämän päivän luukku on siitä erityinen että tänään on Suomen itsenäisyyspäivä. Erityisen päivästä tekee myös se, kun **1. menet ensin äänikanavalle** -> **2. kirjoita chattiin** ***'hyvää itsenäisyyspäivää!'*** saat ennenkuulumattoman itsenäisyyspäivän kokemuksen!", "" + " ", "" + " ", "" + " ", "" + " ", "11" + "11", "" + " ", "" + " ", "" + " ", "" + " ", "" + " ", "" + " ", "" + " ", "" + "", "20" + "20", "21" + "21", "22" + "22", "23" + "23", "24" + "24"]
 
 @client.event
 async def on_ready():
@@ -95,7 +95,7 @@ async def on_message(message):
 
     if message.content == "onko polliisit kinnulassa?":
         alueMissa = ['Muholassa ', 'Hiilingillä ', 'Leean rillillä ', 'Teollisuus alueella ', 'Kylällä ', 'Sellinsuoralla ', 'Perhon tiellä ', 'Kangaskylällä ', 'Kinnuskeskuksella ', 'Uimalaitoksella ', 'Lukkarin rannassa ']
-        poliisiMika = ['siviili auto ', 'pillit päällä ', 'rososta kuulustelevat ', 'ojjaan ajovat ', 'pyssyt paukkuen ']
+        poliisiMika = ['siviili auto ', 'pillit päällä ', 'rososta kuulustelevat ', ' ', ' ']
         alueMinne = ['muholaan päin menossa ', 'hiilingille menossa ', 'perhoon päin menossa ', 'ajavat ', 'lintassa männöö ', ' ', ' ', ' ', ' ']
         loppu = ['varmaa leksaa toas hakevat :joy:', ':joy: ', ':joy: ', ':joy: ', ':joy: ', ':joy: ', '', ':joy: ']
         await client.send_message(message.channel, "ON! " + (random.choice(alueMissa)) + (random.choice(poliisiMika)) + (random.choice(alueMinne)) + (random.choice(loppu)))
@@ -106,9 +106,9 @@ async def on_message(message):
         print("Toikkanen kuittaa")
 
     if message.content == "kuka vei kinnusten rahat?":
-        await client.send_message(message.channel, "Minä. T. Juha Urpilainen")
-        await client.send_message(message.channel, "https://www.suomenmaa.fi/image-3.179688.22e38ea0e3?size=1024")
-        print("Juha Urpilainen Huutaa")
+        await client.send_message(message.channel, "")
+        await client.send_message(message.channel, "")
+        print("")
 
     if message.content == "!kinnulafakt":
         fakta = ['Kinnula on sudeettialue Keski-Suomen maakunnan luoteisimmassa kulmassa. Kulttuurillisesti ja osittain maantieteellisesti skitsofreeninen Kinnula kuuluu Savoon, Pohjanmaahan sekä jotenkin mystisesti Hämeeseen. ', 
@@ -163,4 +163,4 @@ async def on_message(message):
         await client.send_message(message.channel, "Komennot: " + "```" + "||| !ilimojapielly | onko polliisit kinnulassa? | !toikkane | kuka vei kinnusten rahat? | !kinnulafakt |||" + "```")
         print("Mitä sinä tiet?")
 
-client.run("NDkyNzI5NjcwMDUyMzQ3OTA1.DoaqQw.i69PRqXdlb3eGkCm3M6zu5QJWMI")
+client.run("TOKEN")
